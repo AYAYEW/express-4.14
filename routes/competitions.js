@@ -195,4 +195,13 @@ router.post("/scoreUpdate/:id", authRequired, function (req, res, next) {
     }
 
 });
+
+router.get("/layouts/snake", authRequired, function (req, res) {
+    const stmt = db.prepare("");
+    const messages = stmt.all();
+    res.render("layouts/snake", { messages: messages });
+  });
+
+
+
 module.exports = router;

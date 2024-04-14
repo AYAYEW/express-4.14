@@ -25,26 +25,7 @@
     </div>
     {{/if}}
     {{{body}}}
-
-
-<div id="chat-window" class="w-full h-80 border rounded-lg overflow-y-scroll">
-        <!-- Messages will be displayed here -->
-    </div>
-    <div class="flex justify-between mt-4">
-        <input id="message-input" type="text" class="w-3/4 p-2 border rounded-lg" placeholder="Type your message...">
-        <button id="send-button" class="w-1/4 bg-blue-500 text-white p-2 rounded-lg">Send</button>
-    </div>
-
-    <script>
-        // Add event listener to the send button
-        document.getElementById('send-button').addEventListener('click', function () {
-            var message = document.getElementById('message-input').value;
-
-            sendMessageToServer(message);
-        });
-
-            
-    </script>
+    <a href="snake.handlebars" class="btn btn-sm btn-accent">snake</a>
 
 </body>
 
